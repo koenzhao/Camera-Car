@@ -1,0 +1,425 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\STM32工程文件\实验二点亮LED\Project\LED.uvproj
+Project File Date:  08/19/2014
+
+<h2>Output:</h2>
+Build target 'LED'
+compiling Application.c...
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_wwdg.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+linking...
+Program Size: Code=860 RO-data=268 RW-data=20 ZI-data=1636  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(17): warning:  #47-D: incompatible redefinition of macro "LED_1_Pin" (declared at line 10)
+..\User\bsp\LED.h:   #define LED_1_Pin          GPIO_Pin_9
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(19): warning:  #47-D: incompatible redefinition of macro "LED_1" (declared at line 12)
+..\User\bsp\LED.h:   #define LED_1(a)           a>0?GPIO_ResetDataBits(LED_2_Port,LED_2_Pin):GPIO_SetDataBits(LED_2_Port,LED_2_Pin)  
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\Application.c: 3 warnings, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(17): warning:  #47-D: incompatible redefinition of macro "LED_1_Pin" (declared at line 10)
+..\User\bsp\LED.h:   #define LED_1_Pin          GPIO_Pin_9
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(19): warning:  #47-D: incompatible redefinition of macro "LED_1" (declared at line 12)
+..\User\bsp\LED.h:   #define LED_1(a)           a>0?GPIO_ResetDataBits(LED_2_Port,LED_2_Pin):GPIO_SetDataBits(LED_2_Port,LED_2_Pin)  
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 3 warnings, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(17): warning:  #47-D: incompatible redefinition of macro "LED_1_Pin" (declared at line 10)
+..\User\bsp\LED.h:   #define LED_1_Pin          GPIO_Pin_9
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(19): warning:  #47-D: incompatible redefinition of macro "LED_1" (declared at line 12)
+..\User\bsp\LED.h:   #define LED_1(a)           a>0?GPIO_ResetDataBits(LED_2_Port,LED_2_Pin):GPIO_SetDataBits(LED_2_Port,LED_2_Pin)  
+..\User\bsp\LED.h:           ^
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.c(24): error:  #20: identifier "LED_2_Pin" is undefined
+..\User\bsp\LED.c:      GPIO_InitStructure.GPIO_Pin=LED_2_Pin;
+..\User\bsp\LED.c:                                  ^
+..\User\bsp\LED.c(26): error:  #20: identifier "LED_2_Port" is undefined
+..\User\bsp\LED.c:      GPIO_Init(LED_2_Port,&GPIO_InitStructure);
+..\User\bsp\LED.c:                ^
+..\User\bsp\LED.c: ..\User\bsp\LED.c: 3 warnings, 2 errors
+Target not created
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\Application.c: 1 warning, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2704 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\Application.c: 1 warning, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2704 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2704 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2704 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\Application.c(14): warning:  #223-D: function "GPIO_ResetDataBits" declared implicitly
+..\User\Application.c:          LED_1(ON);
+..\User\Application.c:          ^
+..\User\Application.c(14): warning:  #223-D: function "GPIO_SetDataBits" declared implicitly
+..\User\Application.c:          LED_1(ON);
+..\User\Application.c:          ^
+..\User\Application.c: ..\User\Application.c: 3 warnings, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+.\Obj\LED.axf: Error: L6218E: Undefined symbol GPIO_ResetDataBits (referred from application.o).
+.\Obj\LED.axf: Not enough information to list image symbols.
+.\Obj\LED.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(25): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\Application.c: 1 warning, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(25): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(25): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(27): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\Application.c: 1 warning, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(27): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(27): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+compiling main.c...
+..\User\bsp\LED.h(27): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                
+..\User\bsp\LED.h:                                                                                                                ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LED'
+compiling Application.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                        
+..\User\bsp\LED.h:                                                                                                                        ^
+..\User\bsp\LED.h: ..\User\Application.c: 1 warning, 0 errors
+compiling main.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                        
+..\User\bsp\LED.h:                                                                                                                        ^
+..\User\bsp\LED.h: ..\User\main.c: 1 warning, 0 errors
+compiling LED.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                        
+..\User\bsp\LED.h:                                                                                                                        ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 3 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\STM32工程文件\\实验二点亮LED\\Project\\Obj\\LED.AXF" 
+Set JLink Project File to "D:\STM32工程文件\实验二点亮LED\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F100RB
+VTarget = 3.338V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+No Algorithm found for: 08000000H - 08000BE3H
+Erase skipped!
+Build target 'LED'
+linking...
+Program Size: Code=2736 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\STM32工程文件\\实验二点亮LED\\Project\\Obj\\LED.AXF" 
+Set JLink Project File to "D:\STM32工程文件\实验二点亮LED\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F100RB
+VTarget = 3.332V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LED'
+compiling LED.c...
+..\User\bsp\LED.h(24): warning:  #1-D: last line of file ends without a newline
+..\User\bsp\LED.h:                                                                                                                        
+..\User\bsp\LED.h:                                                                                                                        ^
+..\User\bsp\LED.h: ..\User\bsp\LED.c: 1 warning, 0 errors
+linking...
+Program Size: Code=2752 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 1 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=2752 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\STM32工程文件\\实验二点亮LED\\Project\\Obj\\LED.AXF" 
+Set JLink Project File to "D:\STM32工程文件\实验二点亮LED\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F100RB
+VTarget = 3.338V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'LED'
+linking...
+Program Size: Code=2752 RO-data=268 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Obj\LED.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\STM32工程文件\\实验二点亮LED\\Project\\Obj\\LED.AXF" 
+Set JLink Project File to "D:\STM32工程文件\实验二点亮LED\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 17935099 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F100RB
+VTarget = 3.332V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
